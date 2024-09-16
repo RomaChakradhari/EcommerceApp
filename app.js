@@ -23,7 +23,7 @@ app.use("/api/category",categoryRoute);
 app.use("/api/product",producRoute)
 
 app.use("*",(req,res)=>{
-    res.sendFile(path.join(__dirname,"./Frontend/dist/index.html"));
+    res.sendFile(path.join(__dirname,"./Frontend/build/index.html"));
 })
 
 app.listen(8080,()=>{
